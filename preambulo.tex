@@ -1,0 +1,48 @@
+
+% --- PACOTES BÁSICOS E IDIOMA ---
+\usepackage[ruled, linesnumbered, portuguese]{algorithm2e}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel} % Garante nomes como "Sumário" e hifenização correta
+\usepackage{graphicx}
+\usepackage{xcolor} % Para controle de cores nos l
+\usepackage{float} % no preâmbulo
+
+% --- MATEMÁTICA AVANÇADA ---
+\usepackage{amsmath, amssymb, amsthm, bm}
+\usepackage{esint} % Para integrais avançadas (como a da sua imagem inicial)
+
+% --- FORMATAÇÃO DE PÁGINA (ABNT) ---
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry} % Margens padrão
+\usepackage{setspace}
+\onehalfspacing % Espaçamento de 1.5
+\usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção
+
+% --- TABELAS E FORMATAÇÃO ---
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+
+% --- ORGANIZAÇÃO E REFERÊNCIAS ---
+\usepackage{makeidx}
+\usepackage[acronym]{glossaries}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,   % Links internos em preto para impressão
+	citecolor=black,   % Citações em preto
+	urlcolor=blue,     % Links da web em azul
+	pdftitle={Caracterização Óptica de Meios Coloidais}
+}
+
+% --- DEFINIÇÕES DE TEOREMAS ---
+\theoremstyle{remark}
+\newtheorem{Remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{Example}{Exemplo}
+\newtheorem{Theorem}{Teorema}
+\newtheorem{Definition}{Definição}
+\newtheorem{Lemma}{Lema}
+\newtheorem{corollary}{Corolário}

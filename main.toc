@@ -1,0 +1,4 @@
+\babel@toc {portuguese}{}\relax 
+\contentsline {chapter}{\numberline {1}O Estado da Arte da Magia }{1}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Revisão de Materiais de Varinhas de Dragão}{1}{subsection.1.0.1}%
+\contentsline {subsubsection}{Expecto Patronum}{1}{section*.3}%

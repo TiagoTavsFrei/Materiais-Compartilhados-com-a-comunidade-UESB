@@ -1,0 +1,80 @@
+% --- INFORMAÇÕES DO TRABALHO ---
+\newcommand{\meunome}{Harry Potter}
+\newcommand{\meutitulo}{Caracterização Óptica de Magias de Baixo custo: Um Estudo Experimental}
+\newcommand{\meuorientador}{Prof. Dr. Remo João Lupin}
+\newcommand{\minhacidade}{Hogwarts}
+\newcommand{\meuano}{Dezembro 2025}
+
+% --- CONTEÚDO PERSONALIZADO ---
+\newcommand{\minhafrase}{
+	"Leaves are falling all around, it’s time I was on my way... \\
+	Ramble On — Jimmy Page / Robert Plant (Led Zeppelin II, 1969)"
+}
+
+\newcommand{\meusagradecimentos}{
+	Agradeço primeiramente a... [insira aqui seu texto de agradecimento].
+}
+
+% --- COMANDO: CAPA ---
+\newcommand{\gerarCapa}{
+	\begin{titlepage}
+		\begin{center}
+			{\large \meunome} \vspace{4cm}
+			
+			{\bfseries\LARGE \meutitulo} \vspace{1cm}
+			
+			{\large Trabalho de Conclusão de Curso} \vfill
+			
+			\minhacidade \\ \meuano
+		\end{center}
+	\end{titlepage}
+}
+
+% --- COMANDO: FOLHA DE APROVAÇÃO ---
+\newcommand{\gerarFolhaAprovacao}{
+	\newpage
+	\begin{center}
+		\textbf{\meunome} \vspace{1cm}
+		
+		{\bfseries\LARGE \meutitulo}
+	\end{center}
+	\vspace{3cm}
+	\begin{flushright}
+		\begin{minipage}{0.6\textwidth}
+			Monografia apresentada ao curso de Bruxos e Bruxas como pré-requisito para aprovação na disciplina de Trabalho Monográfico Orientado II da hogwarts. \\[0.5cm]
+			\textbf{Orientador:} \meuorientador
+		\end{minipage}
+	\end{flushright}
+	\vfill
+	\begin{center}
+		\textbf{Banca Examinadora} \vspace{1cm}
+		
+		\rule{10cm}{0.4pt} \\ \meuorientador \ (Orientador) \\[0.8cm]
+		\rule{10cm}{0.4pt} \\ Prof. Dr. Severus Snape \\[0.8cm]
+		\rule{10cm}{0.4pt} \\ Prof. Dr. Albus Percival Wulfric Brian Dumbledore
+	\end{center}
+}
+
+% --- COMANDO: FOLHA DA FRASE (EPÍGRAFE) ---
+\newcommand{\gerarFolhaFrase}{
+	\newpage
+	\thispagestyle{empty}
+	\mbox{} \vfill
+	\begin{flushright}
+		\begin{minipage}{0.6\textwidth}
+			\textit{\minhafrase}
+		\end{minipage}
+	\end{flushright}
+}
+
+% --- COMANDO: FOLHA DE AGRADECIMENTOS ---
+\newcommand{\gerarFolhaAgradecimentos}{
+	\newpage
+	\thispagestyle{empty}
+	\begin{center}
+		{\bfseries\LARGE Agradecimentos}
+	\end{center}
+	\vspace{1.5cm}
+	\onehalfspacing
+	\meusagradecimentos
+}

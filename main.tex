@@ -1,0 +1,47 @@
+%\documentclass[a4paper,12pt]{book}
+% --- OPÇÃO 1: PARA LEITURA DIGITAL (Sem páginas em branco e margens iguais) ---
+\documentclass[a4paper,12pt,oneside,openany]{book}
+% --- OPÇÃO 2: PARA IMPRESSÃO (Capítulos na direita e margens para encadernação) ---
+% \documentclass[a4paper,12pt,twoside,openright]{book}
+
+
+% Importa o preâmbulo e os dados da capa
+\input{preambulo}
+\input{dados_capa}
+
+\makeglossaries
+\makeindex
+
+\begin{document}
+	
+	% --- ELEMENTOS PRÉ-TEXTUAIS ---
+	\frontmatter
+	\gerarCapa
+	\gerarFolhaAprovacao
+	\gerarFolhaFrase        
+	\gerarFolhaAgradecimentos 
+	\newpage
+	\tableofcontents
+	\listoffigures
+	
+	% --- ELEMENTOS TEXTUAIS ---
+	\mainmatter
+	
+	% Aqui você anexa seus capítulos que estão na pasta TeX_files
+	
+	\include{./TeX_files/Capitulo01}  
+	
+	
+	% --- ELEMENTOS PÓS-TEXTUAIS ---
+	\backmatter
+	
+	% Bibliografia
+	\begin{thebibliography}{99}
+		\bibitem{Souza} J. W. Souza, ``Some fundamental properties of mage pratics'', \textit{Journal of the magical Society of America}, vol. 66, no. 11, p. 1145, Nov. 1976. doi: \href{https://doi.org/10.}.
+							
+	\end{thebibliography}
+	
+	\printglossary
+	\printindex
+	
+\end{document}
